@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="androidr.example.com.rantidwitaputri_1202154298_modul6.MainActivity">
+    <ImageView
+        android:id="@+id/gambar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/welcomee" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password"
+        android:layout_alignTop="@+id/gambar"
+        android:layout_marginTop="186dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignStart="@+id/Password"
+        android:layout_alignTop="@+id/Password"
+        android:layout_marginTop="67dp"
+        android:onClick="Login"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/Daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Login"
+        android:layout_alignBottom="@+id/Login"
+        android:layout_marginLeft="54dp"
+        android:layout_marginStart="54dp"
+        android:layout_toEndOf="@+id/Login"
+        android:layout_toRightOf="@+id/Login"
+        android:onClick="Daftar"
+        android:text="Daftar" />
+</RelativeLayout>
